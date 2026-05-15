@@ -9,8 +9,8 @@ st.title("🏦 Credit Score Calculator")
 
 # Giriş Alanları
 salary = st.number_input("Aylık Maaş (TL)", min_value=0, value=25000)
-age = st.slider("Yaş", 18, 80, 30)
-late = st.number_input("Gecikmiş Ödeme Sayısı", 0, 10, 0)
+age = st.slider("Age", 18, 80, 30)
+late = st.number_input("Number of Late Payment", 0, 10, 0)
 
 if st.button("Skoru Hesapla"):
     input_df = pd.DataFrame([[0] * len(model.feature_names_in_)], columns=model.feature_names_in_)
