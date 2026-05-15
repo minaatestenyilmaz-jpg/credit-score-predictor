@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # Modeli Yükle
-model = joblib.load('findeks_model.pkl')
+model = joblib.load('model.pkl')
 
 st.title("🏦 Findeks Skor Tahminleyici")
 
