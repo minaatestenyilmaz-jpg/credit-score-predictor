@@ -3,9 +3,9 @@ import joblib
 import pandas as pd
 
 # Modeli Yükle
-model = joblib.load('model(1).pkl')
+model = joblib.load('model.pkl')
 
-st.title("🏦 Findeks Skor Tahminleyici")
+st.title("🏦 Credit Score Calculator")
 
 # Giriş Alanları
 salary = st.number_input("Aylık Maaş (TL)", min_value=0, value=25000)
